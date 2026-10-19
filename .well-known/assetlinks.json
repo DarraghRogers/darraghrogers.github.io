@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ie.darraghrogers.cardwallet",
+    "sha256_cert_fingerprints": [
+      "56:AE:93:34:47:AF:9A:66:04:F1:E0:58:B1:23:FA:20:A7:F3:9D:A3:C3:62:31:A3:8A:AF:0D:08:86:D4:AF:E3",
+      "AD:56:70:2B:0C:B7:9E:D4:88:A7:34:5A:1A:56:4A:3F:D7:5A:39:98:CD:F9:A2:2B:FE:AE:A4:2D:9F:76:48:A6"
+    ]
+  }
+}]

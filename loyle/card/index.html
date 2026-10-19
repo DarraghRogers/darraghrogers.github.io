@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shared card · Loyle</title>
+<style>
+  body{font-family:system-ui,sans-serif;max-width:420px;margin:15vh auto;padding:0 16px;text-align:center;background:#0d0f16;color:#f2f4f8}
+  a{display:block;margin:12px 0;padding:14px;border-radius:14px;text-decoration:none;font-weight:600}
+  .p{background:#14b8a6;color:#fff}.s{border:1px solid #14b8a6;color:#14b8a6}
+</style>
+</head>
+<body>
+  <h1>Someone shared a loyalty card with you</h1>
+  <p>Get Loyle to add it to your wallet.</p>
+  <a class="p" href="https://play.google.com/store/apps/details?id=ie.darraghrogers.cardwallet">Get Loyle on Google Play</a>
+  <a class="s" id="open" href="#" hidden>I already have Loyle: open it</a>
+<script>
+  // Card details live after the # and never reach the server.
+  var h = location.hash.slice(1);
+  if (h.indexOf("v=") === 0) {
+    var a = document.getElementById("open");
+    a.href = "loyle:card?" + h;
+    a.hidden = false;
+  }
+</script>
+</body>
+</html>
